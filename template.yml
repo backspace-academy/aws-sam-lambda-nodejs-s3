@@ -5,7 +5,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: handler
-      Runtime: runtime
+      Runtime: nodejs12.x
       Timeout: 60
       Policies: AWSLambdaExecute
       Events:
