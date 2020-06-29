@@ -4,7 +4,8 @@ Resources:
   CreateThumbnail:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: index.js
+      CodeUri: code/      
+      Handler: index.handler
       Runtime: nodejs12.x
       Timeout: 60
       Policies: AWSLambdaExecute
@@ -14,7 +15,6 @@ Resources:
           Properties:
             Bucket: !Ref SrcBucket
             Events: s3:ObjectCreated:*
-Resources:
   SrcBucket:
     Type: 'AWS::S3::Bucket'
   DstBucket:
