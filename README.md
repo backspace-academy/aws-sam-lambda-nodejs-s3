@@ -5,6 +5,6 @@ download template.yml to a folder
 create a folder called 'code' inside the folder  
 npm init  
 npm install sharp  
-cd ../  
+go back up to the containing folder
 sam build -m code/package.json  
 sam deploy --guided
