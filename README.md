@@ -4,6 +4,7 @@ Lambda S3 lab from the Backspace Academy AWS Certified Developer Associate cours
 cd aws-sam-lambda-nodejs-s3/code  
 npm init  
 npm install sharp  
+rm -r node_modules  
 cd ../  
 sam build -m code/package.json  
 sam deploy --guided
