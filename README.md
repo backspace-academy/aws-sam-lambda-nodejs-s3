@@ -6,5 +6,5 @@ npm init
 npm install sharp  
 rm -r node_modules  
 cd ../  
-sam build
+sam build  
 sam deploy --guided
